@@ -1,0 +1,230 @@
+body{
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+nav p{
+    padding-left: 4%;
+    padding-right: 20%;
+    font-size: 2em;
+}
+.navv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 30%;
+}
+.a-nav{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 20%;
+    padding-top: 40px;
+    white-space: nowrap;
+}
+
+.a-nav:hover{
+    color: #a8dadc;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+.row-product{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+.product{
+    background-color: #ffffff;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    transition: transform 0.3s ease-in-out;
+}
+.imgg{
+    width: 70%;
+    height: 70%;
+    border: #000000 solid 2px;
+}
+.product h3{
+    color: #000000;
+    font-size: 1.5em;
+}
+.price{
+    color: #007bff;
+    font-size: 1.3em;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #28a745;
+    width: 20%;
+    height: 20%;
+    font-size: 1.3em;
+    margin-bottom: 3%;
+    border-radius: 15%;
+}
+
+.buy:hover{
+    background-color: #218838;
+    transition: 0.3s;
+}
+
+.product:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width:1600px){
+    .a-nav{        
+        padding-left: 14%;
+        white-space: nowrap;
+    }
+}
+@media(max-width:1400px){
+    .a-nav{        
+        padding-left: 4%;
+        white-space: nowrap;
+    }
+}
+@media(max-width:1300px){
+    nav{
+    flex-direction: column;
+}
+}
+
+@media(max-width:700px){
+    .row-product{
+        flex-direction: column;
+    }
+    .product{
+        margin-top: 8%;
+    }
+    .a-nav{
+        padding-left: 1%;
+    }
+}
+@media(max-width:570px){
+    .a-nav{
+        padding-left: 1%;
+    }
+}
+@media(max-width:550px){
+    .product h3{
+        font-size: 1.2em;
+        margin-bottom: 4%;
+    }
+    .a-nav{        
+        padding-left: 2%;
+        white-space: nowrap;
+    }
+    .navv{
+        padding-left: 0%;
+    }
+    nav p{
+        padding-left: 2%;
+    }
+    .foote{
+        background-color: #333;
+        width: 100%;
+        height: 80px;
+        margin-top: 2%;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #f7f7f7;
+    }
+    .buy{
+        width: 30%;
+}
+}
+@media(max-width:379px){
+    .product h3{
+        font-size: 1.2em;
+    }
+    nav p{
+        font-size: 1.3em;
+    }
+    .navv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        align-items: center;
+    }
+    .a-nav{
+        font-size: 0.9em;
+        padding-top: 0%;
+        }
+    
+    .price{
+        color: #007bff;
+        font-size: 1em;
+}
+.buy{
+        width: 40%;
+        font-size: 0.8em;
+}
+}
+@media(max-width:315px){
+    nav p{
+        font-size: 1.3em;
+    }
+    .navv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        align-items: center;
+    }
+    .a-nav{
+        font-size: 0.9em;
+        padding-top: 0%;
+        }
+    
+    .price{
+            color: #007bff;
+            font-size: 1em;
+    }
+    .buy{
+            width: 40%;
+            font-size: 0.8em;
+    }
+    .foote{
+        background-color: #333;
+        width: 100%;
+        height: 80px;
+        margin-top: 2%;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #f7f7f7;
+    }
+}
