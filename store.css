@@ -18,7 +18,7 @@ nav{
 nav p{
     padding-left: 4%;
     padding-right: 20%;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .navv{
     display: flex;
@@ -98,6 +98,18 @@ nav p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+.foote{
+    background-color: #333;
+    width: 100%;
+    height: 80px;
+    margin-top: 2%;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f7f7f7;
+}
 @media(max-width:1600px){
     .a-nav{        
         padding-left: 14%;
